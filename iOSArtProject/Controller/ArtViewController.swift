@@ -8,15 +8,14 @@
 
 import UIKit
 
-public class ArtViewController: UIViewController {
+public class ArtViewController: UIViewController
+{
 
-    public override func viewDidLoad() {
+    public override func viewDidLoad() -> Void
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-   
-
 
 }
 
