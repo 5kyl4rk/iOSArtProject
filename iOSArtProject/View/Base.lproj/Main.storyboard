@@ -58,7 +58,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="3np-AS-1Oh">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artIdentifier" id="3np-AS-1Oh" customClass="ArtCell" customModule="iOSArtProject" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="0.0" width="200" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -79,6 +79,10 @@
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.83892588469585405" blue="0.7687355865534532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="artImage" destination="GTt-Sb-kbA" id="TZp-4p-6x8"/>
+                                    <outlet property="artLabel" destination="kgz-xk-FSh" id="jX6-SQ-r6m"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
