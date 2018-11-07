@@ -12,7 +12,42 @@ private let reuseIdentifier = "artIdentifier"
 
 public class ArtCollectionViewController: UICollectionViewController
 {
-
+    
+    //MARK: Data Members Declaration
+    
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] =
+    {
+        return [
+            UIImage(named:"GSC_beta_Meowth"),
+            UIImage(named:"SkylerFitzgerald"),
+            UIImage(named:"SkylerFitzgeraldJavaHaiku"),
+            UIImage(named:"SkylerFitzgeraldMainframeHaiku"),
+            UIImage(named:"SkylerFitzgeraldSwiftHaiku"),
+            UIImage(named:"codeART"),
+            UIImage(named:"continue"),
+            UIImage(named:"wizard_cat")
+        ]
+    }()
+    
+    private let labels : [String] =
+    {
+        return [
+            "MeowthSample",
+            "CatSample",
+            "JavaSample",
+            "MainframeSample",
+            "SwiftSample",
+            "codeSample",
+            "continueSample",
+            "wizardSample"
+        ]
+    }()
+    
+    
     public override func viewDidLoad()
     {
         super.viewDidLoad()
