@@ -11,6 +11,7 @@ import UIKit
 public class ArtViewController: UIViewController
 {
 
+    @IBOutlet weak var changeScreen: UIButton!
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()

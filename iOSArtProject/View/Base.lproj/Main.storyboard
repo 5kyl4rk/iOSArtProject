@@ -31,13 +31,16 @@
                                     <color key="titleColor" red="0.14819835310368187" green="0.64575075462361586" blue="0.80151491116751272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="K7z-yQ-r3a" kind="show" id="ERG-Jc-3vP"/>
+                                    <segue destination="K7z-yQ-r3a" kind="show" id="MVC-Rg-1iY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="changeScreen" destination="tsK-mE-OkB" id="iih-GS-oaF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,8 +83,8 @@
                                 </view>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.83892588469585405" blue="0.7687355865534532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="artImage" destination="GTt-Sb-kbA" id="TZp-4p-6x8"/>
-                                    <outlet property="artLabel" destination="kgz-xk-FSh" id="jX6-SQ-r6m"/>
+                                    <outlet property="artImage" destination="GTt-Sb-kbA" id="6Yc-V1-fVJ"/>
+                                    <outlet property="artLabel" destination="kgz-xk-FSh" id="3O2-RG-eYk"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
