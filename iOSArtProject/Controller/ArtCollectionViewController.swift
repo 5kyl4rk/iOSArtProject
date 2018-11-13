@@ -73,7 +73,7 @@ public class ArtCollectionViewController: UICollectionViewController
     // MARK: UICollectionViewDataSource
     public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell //'!' means to force unwrap it as an ArtCell (even if it technically not an ArtCell)
         
         artCell.backgroundColor = .red
         artCell.artImage.image = creativeCS[indexPath.row]
